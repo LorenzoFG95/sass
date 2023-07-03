@@ -1,0 +1,5 @@
+@mixin card($theme: $primaryColor) {
+  background-color: $theme;
+  border-radius: 12px;
+  padding: 20px;
+}

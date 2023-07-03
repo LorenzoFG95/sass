@@ -1,0 +1,32 @@
+@import "./scss/all.scss";
+
+.container {
+  ul {
+    color: $backgroundColor;
+    margin: $margin;
+    @include card;
+  }
+}
+
+ul {
+  color: $textColor;
+  @include card($theme: $accentColor);
+}
+
+.container {
+  @include xs {
+    border: 2px solid red;
+  }
+  @include sm {
+    border: 2px solid rgb(255, 251, 0);
+  }
+  @include md {
+    border: 2px solid rgb(0, 255, 21);
+  }
+  @include lg {
+    border: 2px solid rgb(0, 238, 255);
+  }
+  @include xl {
+    border: 2px solid rgb(195, 0, 255);
+  }
+}
