@@ -4,3 +4,20 @@ $basesize: 16px;
 @function rem($px) {
   @return math.div($px, $basesize) * 1rem;
 }
+
+@function colorShade($color, $percentage, $theme) {
+  @if ($theme == "light") {
+    @return mix(white, $color, $percentage);
+  } @else {
+    @return mix(black, $color, $percentage);
+  }
+}
+
+// .test {
+//   background-color: colorShade(red, 50%, "");
+// }
+
+$columnCount: 12;
+@function column($col) {
+  @return math.div(100%, $columnCount) * $col;
+}

@@ -9,18 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        <ul>
-          <li>lista 1.1</li>
-          <li>lista 1.2</li>
-          <li>lista 1.3</li>
-        </ul>
-      </div>
-      <ul>
-        <li>lista 2.1</li>
-        <li>lista 2.2</li>
-        <li>lista 2.3</li>
-      </ul>
+      <div className="test">Aiuto</div>
     </>
   );
 }
